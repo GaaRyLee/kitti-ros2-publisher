@@ -3,6 +3,10 @@
 An ROS 2 Humble demo pipeline that turns DrivingStereo stereo image pairs into
 filtered, colored pseudo-point clouds and accumulates them in RViz2.
 
+## Demo
+
+[▶ Watch the mapping demo](Demo.mp4)
+
 ## Pipeline
 
 ```text
