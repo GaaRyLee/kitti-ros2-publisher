@@ -21,3 +21,6 @@ __pycache__/
 
 # Full-resolution local demo recording (a lightweight GIF preview is tracked)
 /Demo.mp4
+
+# Proprietary multi-scale research model retained locally during journal submission
+/ros2_ws/src/kitti_image_receiver/kitti_image_receiver/MuiltiScale.py

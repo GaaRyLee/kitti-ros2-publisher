@@ -21,6 +21,11 @@ DrivingStereo left/right images
 The active mapping implementation is in
 `ros2_ws/src/drivingstereo_pseudo_points`.
 
+> Note: The proprietary multi-scale model implementation used by the
+> `kitti_image_receiver` package is intentionally excluded while related
+> journal work is under submission. Consequently, that package is not
+> runnable from this public repository as-is.
+
 ## Prerequisites
 
 - Docker Desktop with NVIDIA GPU support.
