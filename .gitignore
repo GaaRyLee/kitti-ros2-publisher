@@ -18,3 +18,6 @@ __pycache__/
 # Local Docker/build logs
 /docker-build.stdout.log
 /docker-build.stderr.log
+
+# Full-resolution local demo recording (a lightweight GIF preview is tracked)
+/Demo.mp4

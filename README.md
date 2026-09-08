@@ -5,7 +5,7 @@ filtered, colored pseudo-point clouds and accumulates them in RViz2.
 
 ## Demo
 
-[▶ Watch the mapping demo](Demo.mp4)
+![RViz2 colored pseudo-point mapping demo](demo-preview.gif)
 
 ## Pipeline
 
