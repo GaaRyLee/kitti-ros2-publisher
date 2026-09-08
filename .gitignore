@@ -1,0 +1,20 @@
+# Large local datasets, checkpoints, and generated mapping artifacts
+/2011_09_29/
+/drivingstereo/
+/output/
+/ros2_ws/model_folder/
+
+# colcon build products
+/ros2_ws/build/
+/ros2_ws/install/
+/ros2_ws/log/
+
+# Python and editor artifacts
+__pycache__/
+*.py[cod]
+.vscode/
+.idea/
+
+# Local Docker/build logs
+/docker-build.stdout.log
+/docker-build.stderr.log

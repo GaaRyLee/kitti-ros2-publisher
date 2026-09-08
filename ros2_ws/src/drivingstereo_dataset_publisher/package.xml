@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>drivingstereo_dataset_publisher</name>
+  <version>0.1.0</version>
+  <description>Publish paired DrivingStereo images and calibration as ROS 2 topics.</description>
+  <maintainer email="maintainer@example.com">DrivingStereo publisher</maintainer>
+  <license>Apache-2.0</license>
+  <buildtool_depend>ament_python</buildtool_depend>
+  <depend>rclpy</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+  <exec_depend>cv_bridge</exec_depend>
+  <exec_depend>python3-opencv</exec_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <export><build_type>ament_python</build_type></export>
+</package>

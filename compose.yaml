@@ -1,0 +1,27 @@
+services:
+  ros2:
+    image: ros2-humble-dev:local
+    build: .
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    environment:
+      # Forward Qt/X11 applications (such as RViz2) to a Windows X server.
+      # Start VcXsrv/XLaunch on Windows before launching this service.
+      DISPLAY: host.docker.internal:0.0
+      QT_X11_NO_MITSHM: "1"
+      # Use software OpenGL first for a reliable GUI-forwarding smoke test.
+      # Remove this after confirming hardware OpenGL works in your environment.
+      LIBGL_ALWAYS_SOFTWARE: "1"
+      NVIDIA_VISIBLE_DEVICES: all
+      NVIDIA_DRIVER_CAPABILITIES: compute,utility,graphics
+    working_dir: /workspace
+    volumes:
+      - .:/workspace
+      - ./ros2_ws:/ros2_ws
+    stdin_open: true
+    tty: true
